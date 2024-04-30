@@ -156,7 +156,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Libev_Server
 config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan
 	bool "Include Trojan"
 	select PACKAGE_$(PKG_NAME)_INCLUDE_IPT2Socks
-	default y if arm||mipsel
+	default n if arm||mipsel
 endef
 
 define Package/$(PKG_NAME)/conffiles
